@@ -3,7 +3,6 @@ import { useState } from 'react';
 export const Use_Input_Hook = (value: string | number) => {
   const initial_value = typeof value === 'string' ? '' : 0;
   const [input_value, set_value] = useState(initial_value);
-
   return {
     input_value,
     set_value,

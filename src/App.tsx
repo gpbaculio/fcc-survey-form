@@ -1,10 +1,10 @@
 import React from 'react';
-import Survey_Form from './components/Survey_Form';
+import SurveyForm from './components/SurveyForm';
 
 const App: React.FC = () => {
   return (
     <div className='App'>
-      <Survey_Form />
+      <SurveyForm />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FormGroup, Label, Input } from 'reactstrap';
-import { Survey_Input_Props } from './Survey_Input_Email_Text_Number';
+import { Survey_Input_Props } from './SurveyInputEmailTextNumberTextArea';
 
 const Survey_Input_Select = ({
   label,
@@ -9,9 +9,9 @@ const Survey_Input_Select = ({
   placeholder,
   type,
   required,
-  options
+  options,
+  default_value
 }: Survey_Input_Props) => {
-  const default_value = 'Select current role';
   return (
     <FormGroup>
       <Label for={input_key}>{label}</Label>

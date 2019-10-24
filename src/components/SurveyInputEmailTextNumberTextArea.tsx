@@ -9,10 +9,12 @@ export interface Survey_Input_Props {
   };
   input_key: string;
   placeholder: string;
-  type: 'email' | 'text' | 'number' | 'select';
+  type: 'email' | 'text' | 'number' | 'select' | 'textarea';
   required: boolean;
   options?: string[];
+  default_value?: string;
 }
+
 const Survey_Input = ({
   label,
   bind,
