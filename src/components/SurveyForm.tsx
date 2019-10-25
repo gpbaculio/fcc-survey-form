@@ -69,8 +69,8 @@ function Survey_Form() {
   };
 
   return (
-    <div className='survey-form-container w-25'>
-      <Form onSubmit={handle_submit}>
+    <div className='survey-form-container w-75 mx-auto mb-4'>
+      <Form onSubmit={handle_submit} id='survey-form'>
         <SurveyInputEmailTextNumberTextArea
           placeholder={'Enter your name'}
           label={'Name'}
@@ -92,7 +92,7 @@ function Survey_Form() {
         <SurveyInputEmailTextNumberTextArea
           placeholder={'Age'}
           label={'Age(optional)'}
-          input_key={'age'}
+          input_key={'number'}
           key={'age'}
           type='number'
           bind={bind_age}
@@ -137,7 +137,9 @@ function Survey_Form() {
           label={'Any comments or suggestions?'}
           name={'comments_suggestions'}
         />
-        <Button>Submit</Button>
+        <Button type='submit' id='submit'>
+          Submit
+        </Button>
       </Form>
     </div>
   );

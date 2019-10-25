@@ -23,13 +23,20 @@ const Survey_Input = ({
   type,
   required
 }: Survey_Input_Props) => {
+  const min_max = {
+    min: 0,
+    max: 100
+  };
   return (
     <FormGroup>
-      <Label for={input_key}>{label}</Label>
+      <Label id={`${input_key}-label`} for={input_key}>
+        {label}
+      </Label>
       <Input
         type={type}
         name={input_key}
         id={input_key}
+        {...(input_key === 'number' && min_max)}
         {...bind}
         required={required}
         placeholder={placeholder}

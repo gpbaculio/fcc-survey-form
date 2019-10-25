@@ -21,7 +21,7 @@ const Survey_Input_Select = ({
         required={required}
         onChange={bind.onChange}
         name={input_key}
-        id={input_key}>
+        id='dropdown'>
         <option disabled value={default_value} defaultValue={default_value}>
           {default_value}
         </option>

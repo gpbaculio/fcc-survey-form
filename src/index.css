@@ -9,5 +9,6 @@ body {
 
 .survey-form-container {
   border: solid #E0E2E5 1px;
+  background-color: #F5F6F7;
   padding: 1rem;
 }

@@ -24,6 +24,7 @@ const SurveyInputCheckbox = ({
             checked={bind.value[name]}
             type='checkbox'
             id={name}
+            value={name}
             onChange={bind.onChange}
             name={name}
             label={label}
